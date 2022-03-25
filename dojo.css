@@ -1,0 +1,67 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+/* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Button that pops off the screen: Optional drop shadow and border rounding */
+#create-account-button {
+    width: 150px;
+    height: 40px;
+    background-color:dodgerblue;
+    color: white;
+    border-width: 3px;
+    border-color: black;
+    font-size: 18px;
+    /* box-shadow: 3px 3px black; */
+    /* border-radius: 50%; */
+}
+
+/* Flexible Navigation (Top) Bar: Can adjust alignment, spacing, background color and more easily*/
+.nav {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Flexible rows and columns: Can adjust columns sizing by using diff col classes */
+.row {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.col, .col-2, .col-3 {
+    background-color: teal;
+    margin: 10px;
+    padding: 15px;
+}
+.col {
+    flex: 1;
+}
+.col-2 {
+    flex: 2;
+}
+.col-3 {
+    flex: 3;
+}
+
+/* Remove default styling from elements:
+    • Bullet points for list elements
+    • anchor underlining
+    • anchor color
+*/
+li.no-style {
+    list-style: none;
+}
+a.no-style {
+    text-decoration: none;
+    color: white;
+}
